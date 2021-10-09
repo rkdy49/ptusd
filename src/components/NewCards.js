@@ -55,46 +55,7 @@ function NewCards() {
                   sending of metadata with the token.
                 </Card>
               </Col>
-              <Col span={7} style={{ margin: "1%" }}>
-                <Card
-                  bordered={true}
-                  style={{ height: "175px", width: "380px" }}
-                >
-                  <h2>
-                    <CheckCircleOutlined /> Smart Contact
-                  </h2>
-                  Our Smart contracts will ensure that timely dividends and
-                  rights that are promised are given to the token holders. It
-                  will also allow secondary trading of the tokens and sending of
-                  metadata with the token.
-                </Card>
-              </Col>
-              <Col span={7} style={{ margin: "1%" }}>
-                <Card
-                  bordered={true}
-                  style={{ height: "175px", width: "380px" }}
-                >
-                  <h2>
-                    <CheckCircleOutlined /> Smart Contact
-                  </h2>
-                  Our Smart contracts will ensure that timely dividends and
-                  rights that are promised are given to the token holders. It
-                  will also allow secondary trading of the tokens and sending of
-                  metadata with the token.
-                </Card>
-              </Col>
-              <Col span={7} style={{ margin: "1%" }}>
-                <Card
-                  bordered={true}
-                  style={{ height: "175px", width: "380px" }}
-                >
-                  <h2>
-                    <CheckCircleOutlined /> Smart Contact
-                  </h2>
-                  Our Smart contracts will ensure that timely dividends and
-                  rights that are promised are given to the token holders. It
-                </Card>
-              </Col>
+                            
             </Row>
           </div>
         </Col>
