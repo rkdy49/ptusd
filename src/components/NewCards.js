@@ -1,6 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { Card, Col, Row } from "antd";
+import "./Why.css";
 import {
   BookOutlined,
   PieChartOutlined,
@@ -13,7 +14,7 @@ function NewCards() {
       <Row>
         <Col span={21} offset={2}>
           <div className="site-card-wrapper">
-            <h1> Why Brickstox</h1>
+            <h1 className={"WhyHeading"}> Why Brickstox</h1>
             <Row>
               <Col span={7} style={{ margin: "1%" }}>
                 <Card

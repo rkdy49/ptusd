@@ -63,14 +63,13 @@ function Footer() {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              <h5>
+              <h5 style={{ color: "white" }}>
                 The{" "}
-                <span style={{ color: "#4EC8CA", margin: "0 10px 0 10px" }}>
+                <span style={{ color: "#4EC8CA", margin: "0 5px 0 5px" }}>
                   Ledger
                 </span>{" "}
                 Company
               </h5>
-              <i class="fab fa-typo3" />
             </Link>
           </div>
           <small class="website-rights"> The Ledger Company © 2020</small>
