@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
-import { Link, Switch, Route, Redirect } from "react-router-dom";
-import logo from "../writtenLogo.jpeg";
+import { BrowserRouter } from "react-router-dom";
+import { NavLink, Link, Switch, Route, Redirect } from "react-router-dom";
+// import Services from "./Services";
+// import Products from "./Products";
+// import SignUp from "./SignUp";
 
+import logo from "../writtenLogo.jpeg";
 import "./Navbar.css";
 import Products from "./pages/Products";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+
+import SignUp from "./pages/SignUp";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -31,49 +39,59 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
             The <span> Ledger </span> Company
-            {/* <i class='fab fa-typo3' /> */}
-            {/* <img src={logo} style={{width:"200px",height:"75px",float:"right"}} alt="bit" /> */}
-          </Link>
+          </NavLink>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </NavLink>
             </li>
-            <li className="nav-item">
-              <Link
+
+            {/* ################other menu sections################ */}
+
+            <li>
+              <NavLink
                 to="/marketplace"
-                // component={Products}
+                className="nav-item"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Marketplace
-                {/* <Products /> */}
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/services"
+              <NavLink
+                to="/about-us"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 About us
-              </Link>
+              </NavLink>
+            </li>
+
+            <li>
+              {" "}
+              {button && (
+                <Button buttonStyle="btn--outline">Connect Wallet</Button>
+              )}
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Connect Wallet</Button>}
-
-          {/* <Switch>
-            <Route path="/marketplace" component={Products}></Route>
-          </Switch> */}
         </div>
       </nav>
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about-us" component={Services} />
+        <Route exact path="/marketplace" component={Products} />
+        <Route exact path="/sign-up" component={SignUp} />
+        <Redirect to="/" />
+      </Switch>
     </>
   );
 }

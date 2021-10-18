@@ -9,7 +9,6 @@ import NewCards from "../NewCards";
 import PropertyCard from "../PropertyCard";
 import Why from "../Why";
 import HowItWorks from "../HowItWorks";
-
 function Home() {
   return (
     <>
@@ -21,7 +20,7 @@ function Home() {
           <Why />
           <NewCards />
           <HowItWorks />
-          <PropertyCard />
+
           <Footer />
         </Col>
       </Row>

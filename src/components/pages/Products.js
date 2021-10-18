@@ -2,15 +2,25 @@ import React from "react";
 import "../../App.css";
 import Cards from "../Cards";
 import PropertyCard from "../PropertyCard";
+import { Row, Col, Space } from "antd";
+import AboutProperty from "../AboutProperty";
+
 // import  './'
 
 export default function Products() {
   return (
     <>
-      {/* <h1> aaple</h1>
-      <h1 className="products">PRODUCTS</h1> */}
+      <AboutProperty />
+      <h1>Choose from over 100+ properties </h1>
+
       <div>
-        <PropertyCard />
+        <Row>
+          <Col offset={2}>
+            <PropertyCard />
+            <PropertyCard />
+            <PropertyCard />
+          </Col>
+        </Row>
       </div>
     </>
   );

@@ -1,19 +1,18 @@
-. {
-    background-color: grey;
-}
-
 .WhyHeading {
-    text-align: center;
-    /* margin-bottom: 5%; */
-    margin-right: 6%;
-    margin-top: 2%;
-    border-bottom: 2px solid cadetblue;
-    border-bottom-width: 1px;
-    padding-bottom: 10px;
-    font-family: Quicksand, sans-serif;
+  text-align: center;
+  /* margin-bottom: 5%; */
+  margin-right: 6%;
+  margin-top: 2%;
+  /* border-bottom: 2px solid cadetblue; */
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+  font-family: Quicksand, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #4ec8ca;
 }
 
 .ant-card-cover img {
-    width: 450px;
-    height: 250px;
+  width: 450px;
+  height: 250px;
 }

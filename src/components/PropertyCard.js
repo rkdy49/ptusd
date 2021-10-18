@@ -1,6 +1,9 @@
 import React from "react";
 import { Skeleton, Switch, Card, Avatar } from "antd";
-import { Row, Col, Button, Space } from "antd";
+import { Row, Col, Space } from "antd";
+import Button from "../components/Button";
+import home from "../../src/home.jpg";
+import "./PropertyCards.css";
 
 const { Meta } = Card;
 // import homes from "../";
@@ -10,11 +13,12 @@ function PropertyCard() {
   return (
     <div>
       <Card
+        hoverable
         style={{
           width: 1200,
           margin: 16,
           alignItems: "center",
-
+          backgroundColor: "#F8f9f5",
           padding: "0%",
         }}
       >
@@ -30,40 +34,34 @@ function PropertyCard() {
               <Col span={10}>
                 <img
                   alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  // src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  src={home}
                   style={{ width: "100%", margin: "2%", padding: 0 }}
                 />
               </Col>
-              <Col span={14} style={{ textAlign: "center" }}>
-                <h1>Property Name</h1>
-                <h2>Yaha located hai bhai mast jagah hai</h2>
-                <Row>
+              <Col span={13} offset={1} style={{ textAlign: "left" }}>
+                <h1 style={{ textAlign: "left" }}>Property Name</h1>
+                <h2>Location</h2>
+                <Row className="propertyCard-Row">
                   <Col span={12}>
                     <h2>
                       {" "}
-                      Itta total Paisa
+                      Total Property Value
                       <br />
-                      $50000
+                      <span style={{ color: "  #294378" }}> $50000</span>
                     </h2>
                   </Col>
                   <Col span={12}>
                     <h2>
                       {" "}
-                      Itta total Paisa <br />
-                      $200
+                      Total Token Amount <br />
+                      <span style={{ color: "red" }}> $200</span>
                     </h2>
                   </Col>
                 </Row>
 
-                <Button
-                  type="primary"
-                  shape="round"
-                  size="large"
-                  style={{ width: "40%", marginTop: "5%" }}
-                >
-                  {" "}
-                  Buy Now Bro
-                </Button>
+                <Button > Invest Now </Button>
+                {/* <Button /> */}
               </Col>
             </Row>
           </Col>

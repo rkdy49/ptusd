@@ -11,16 +11,11 @@ import liquidate from "../../src/liquidate.png";
 
 const { Title } = Typography;
 
-function AboutCompany() {
+function AboutProperty() {
   return (
     <>
       <div className="main">
-        <h1>
-          {" "}
-          A blockchain powered platform where users can buy and sell Fractional
-          Tokenized Ownership of Real Estate{" "}
-        </h1>
-        <div className="bulletBlock">
+        <div className="bulletProperty">
           <ul>
             <li>
               <img
@@ -51,4 +46,4 @@ function AboutCompany() {
   );
 }
 
-export default AboutCompany;
+export default AboutProperty;

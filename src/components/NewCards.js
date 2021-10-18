@@ -11,7 +11,7 @@ import {
 function NewCards() {
   return (
     <>
-      <Row>
+      <Row style={{ backgroundColor: "#242424", paddingBottom: "5%" }}>
         <Col span={21} offset={2}>
           <div className="site-card-wrapper">
             <h1 className={"WhyHeading"}> Why Brickstox</h1>
@@ -56,7 +56,6 @@ function NewCards() {
                   sending of metadata with the token.
                 </Card>
               </Col>
-                            
             </Row>
           </div>
         </Col>

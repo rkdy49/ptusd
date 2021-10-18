@@ -20,6 +20,7 @@ function Why() {
               <Card
                 style={{
                   width: 450,
+                  height: 450,
                   borderRadius: true,
                   padding: 0,
                   margin: "5% auto",
@@ -28,13 +29,6 @@ function Why() {
                 cover={<img alt="example" src={equality} />}
               >
                 {" "}
-                {/* <Meta
-                                                  description=" We define a bitcoin as a chain of digital signatures. Each
-                                      owner transfers bitcoin to the next by digitally signing a
-                                      hash of the previous transaction and the public key of the
-                                      next owner and adding these to the end of the coin. A payee
-                                      can verify the signatures to verify the chain of ownership."
-                                                /> */}{" "}
                 <h2> Democratization </h2>{" "}
                 <p>
                   {" "}
@@ -48,21 +42,15 @@ function Why() {
             </Col>{" "}
             <Col span={10}>
               <Card
-                style={{ width: 450, float: "right", margin: "5% auto" }}
+                style={{
+                  width: 450,
+                  height: 450,
+                  float: "right",
+                  margin: "5% auto",
+                }}
                 cover={<img alt="example" src={liquidity} />}
               >
                 {" "}
-                {/* <Meta
-                                                      avatar={
-                                                        <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                                                      }
-                                                      title="Card title"
-                                                      description=" We define a bitcoin as a chain of digital signatures. Each
-                                          owner transfers bitcoin to the next by digitally signing a
-                                          hash of the previous transaction and the public key of the
-                                          next owner and adding these to the end of the coin. A payee
-                                          can verify the signatures to verify the chain of ownership."
-                                                    /> */}{" "}
                 <h2> High Liquidity </h2>{" "}
                 <p>
                   {" "}
@@ -78,6 +66,7 @@ function Why() {
               <Card
                 style={{
                   width: 450,
+                  height: 450,
                   borderRadius: true,
                   padding: 0,
                   margin: "5% auto",
@@ -91,13 +80,6 @@ function Why() {
                 }
               >
                 {" "}
-                {/* <Meta
-                                                      description=" We define a bitcoin as a chain of digital signatures. Each
-                                          owner transfers bitcoin to the next by digitally signing a
-                                          hash of the previous transaction and the public key of the
-                                          next owner and adding these to the end of the coin. A payee
-                                          can verify the signatures to verify the chain of ownership."
-                                                    /> */}{" "}
                 <h2> Transparency and Security </h2>{" "}
                 <p>
                   {" "}
@@ -112,6 +94,7 @@ function Why() {
               <Card
                 style={{
                   width: 450,
+                  height: 450,
                   margin: "auto",
                   float: "right",
                   margin: "5% auto",
@@ -119,20 +102,12 @@ function Why() {
                 cover={<img alt="example" src={barrier} />}
               >
                 {" "}
-                {/* <Meta
-                                                         
-                                                          title="Card title"
-                                                          description=" We define a bitcoin as a chain of digital signatures. Each
-                                              owner transfers bitcoin to the next by digitally signing a
-                                              hash of the previous transaction and the public key of the
-                                              next owner and adding these to the end of the coin. A payee
-                                              can verify the signatures to verify the chain of ownership."
-                                                        /> */}{" "}
                 <h2> No Geographical Barrier </h2>{" "}
                 <p>
                   {" "}
                   Investors can invest in any real estate without demographical
-                  limitations.{" "}
+                  limitations.Shoppers can buy anything they want anywhere and
+                  anytime{" "}
                 </p>{" "}
               </Card>{" "}
             </Col>{" "}

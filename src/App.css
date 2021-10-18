@@ -5,6 +5,10 @@
   font-family: "PT Sans", sans-serif;
 }
 
+.List-heading {
+  font-size: "45px";
+}
+
 .home,
 .services,
 .products,
